@@ -1,0 +1,157 @@
+/* 공통 스타일 */
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* InputCon 스타일 */
+.input-con {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.input-con .label-con,
+.input-con .option-con {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.input-con label {
+  margin-bottom: 0;
+  width: 30%;
+}
+
+.input-con input,
+.input-con select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.input-con input {
+  width: 70%;
+}
+
+.input-con select {
+  width: 50%;
+}
+
+.input-con button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-con button:hover {
+  background-color: #0056b3;
+}
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+}
+
+/* ListArea 스타일 */
+.list-area {
+  width: 48%;
+}
+
+.search-con {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-con input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-con button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.list-area ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-area li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.list-area li p {
+  margin: 0 10px;
+}
+
+.list-area li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-area li button:hover {
+  background-color: #218838;
+}
+
+.list-area li button:last-child {
+  background-color: #dc3545;
+}
+
+.list-area li button:last-child:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .input-con,
+  .list-area {
+    width: 100%;
+    font-size: small;
+    text-align: center;
+  }
+  .option-con button {
+    font-size: 15px;
+  }
+}
